@@ -48,6 +48,7 @@ public class MD5Util {
     }
 
     public static String MD5EncodeUtf8(String origin) {
+        //增加盐值，防止穷解破解MD5加密，在mmall.properties里面
         origin = origin + PropertiesUtil.getProperty("password.salt", "");
         return MD5Encode(origin, "utf-8");
     }

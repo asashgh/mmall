@@ -15,6 +15,8 @@ public class TokenCache {
 
     private  static Logger logger = LoggerFactory.getLogger(TokenCache.class);
 
+    public static  final  String TOKEN_PREFIX = "token_";
+
     /**
      * guava中的本地缓存,开始构建本地缓存，是一种调用链的形式(及.后再.),1000是缓存的初始化容量,当超过maxsize的值，guavadecache就会使用LRU()算法
      * LRU就是最小使用算法来移除缓存项,expireAfterAccess表示有效期，对应的单位是第二个参数,build选择CacheLoader，这是一个抽象类，在这里面写一个
