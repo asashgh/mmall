@@ -47,7 +47,6 @@ public class ServerResponse<T> implements Serializable {
     public int getStatus(){
         return status;
     }
-
     public T getData(){
         return data;
     }

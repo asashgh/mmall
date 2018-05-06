@@ -75,7 +75,7 @@
         #{checked,jdbcType=INTEGER},
       </if>
       <if test="createTime != null" >
-        noew(),
+        now(),
       </if>
       <if test="updateTime != null" >
         now(),
